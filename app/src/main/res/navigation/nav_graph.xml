@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.cabbooking.login.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFormFragment"
+            app:destination="@id/loginFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFormFragment"
+        android:name="com.example.cabbooking.signin.LoginFormFragment"
+        android:label="fragment_login_form"
+        tools:layout="@layout/fragment_login_form" >
+        <action
+            android:id="@+id/action_loginFormFragment_to_signupFormFragment"
+            app:destination="@id/signupFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFormFragment"
+        android:name="com.example.cabbooking.signin.SignupFormFragment"
+        android:label="fragment_signup_form"
+        tools:layout="@layout/fragment_signup_form" />
+</navigation>

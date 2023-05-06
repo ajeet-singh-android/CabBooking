@@ -1,11 +1,14 @@
 package com.example.cabbooking.onBoarding
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cabbooking.Authentication.AuthActivity
 import com.example.cabbooking.R
 import com.example.cabbooking.databinding.ActivityOnBoardingActivithyBinding
 import com.example.cabbooking.databinding.OnboardingItemsBinding
@@ -20,10 +23,13 @@ class OnBoardingActivithy : AppCompatActivity() {
         _binding = ActivityOnBoardingActivithyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
         binding.viewpager2.adapter = ViewPagerAdapter()
         binding.dotsIndicator.attachTo(binding.viewpager2)
+
+        binding.sikeText.setOnClickListener {
+            Toast.makeText(this@OnBoardingActivithy,"fjskdjfks",Toast.LENGTH_LONG).show()
+            startActivity(Intent(this@OnBoardingActivithy,AuthActivity::class.java))
+        }
 
 
 
