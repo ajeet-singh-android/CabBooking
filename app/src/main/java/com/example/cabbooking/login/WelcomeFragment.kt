@@ -5,8 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import com.example.cabbooking.Authentication.AuthActivity
 import com.example.cabbooking.R
+
 import com.example.cabbooking.databinding.FragmentWelcomeBinding
 
 
@@ -27,7 +28,20 @@ class WelcomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        findNavController().navigate(R.id.action_welcomeFragment_to_loginFormFragment)
+        binding.loginbutton.setOnClickListener {
+            (requireActivity() as AuthActivity).gotoPage(R.id.loginFormFragment)
+        }
+
+        binding.createaccountbutton.setOnClickListener {
+            (requireActivity() as AuthActivity).gotoPage(R.id.signupFormFragment)
+        }
+
+    }
+
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 
 }

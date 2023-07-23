@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_7sdp"
+    android:elevation="@dimen/_7sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_125sdp"
+            android:src="@drawable/hire_slider_img"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.cardview.widget.CardView>

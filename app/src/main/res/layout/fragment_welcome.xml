@@ -20,6 +20,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/appCompatTextView"
                 android:layout_width="wrap_content"
@@ -33,7 +34,7 @@
                 android:textSize="@dimen/_25sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintHorizontal_bias="0.09"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.1" />
@@ -56,19 +57,16 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginbutton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_16sdp"
         android:layout_marginTop="@dimen/_50sdp"
-        android:background="@drawable/login_bg"
-        android:fontFamily="@font/roboto_bold"
+        style="@style/button_style"
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textFontWeight="700"
-        android:textSize="@dimen/_18sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -76,24 +74,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createaccountbutton"
+        style="@style/button_style"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_16sdp"
-        android:background="@drawable/btn_black"
-        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="@dimen/_30sdp"
         android:text="Create New Account"
-        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textFontWeight="600"
-        android:textSize="@dimen/_18sdp"
+        app:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0"
-        android:layout_marginTop="@dimen/_30sdp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintVertical_bias="0" />
 
 
     <androidx.appcompat.widget.LinearLayoutCompat

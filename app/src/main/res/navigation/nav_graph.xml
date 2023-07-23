@@ -9,23 +9,30 @@
         android:id="@+id/welcomeFragment"
         android:name="com.example.cabbooking.login.WelcomeFragment"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" >
-        <action
-            android:id="@+id/action_welcomeFragment_to_loginFormFragment"
-            app:destination="@id/loginFormFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_welcome" />
     <fragment
         android:id="@+id/loginFormFragment"
         android:name="com.example.cabbooking.signin.LoginFormFragment"
         android:label="fragment_login_form"
-        tools:layout="@layout/fragment_login_form" >
-        <action
-            android:id="@+id/action_loginFormFragment_to_signupFormFragment"
-            app:destination="@id/signupFormFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_login_form" />
     <fragment
         android:id="@+id/signupFormFragment"
         android:name="com.example.cabbooking.signin.SignupFormFragment"
         android:label="fragment_signup_form"
         tools:layout="@layout/fragment_signup_form" />
+    <fragment
+        android:id="@+id/forogotPasswordFragment"
+        android:name="com.example.cabbooking.forgot.ForogotPasswordFragment"
+        android:label="fragment_forogot_password"
+        tools:layout="@layout/fragment_forogot_password" />
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.example.cabbooking.reset_password.ResetPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" />
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.example.cabbooking.otp.OTPFragment"
+        android:label="fragment_o_t_p"
+        tools:layout="@layout/fragment_o_t_p" />
 </navigation>
