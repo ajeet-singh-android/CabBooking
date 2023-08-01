@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".car_details.CarDetailsFragmentFragment">
+
+
+    <include
+        layout="@layout/home_tollbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:elevation="@dimen/_10sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A2Z Car Club"
+            style="@style/h3"
+            android:textFontWeight="800"/>
+
+
+        <RatingBar
+            android:id="@+id/myRatingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="5"
+            android:theme="@style/RatingBar"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginHorizontal="1dp"
+        app:cardCornerRadius="@dimen/_12sdp"
+        android:elevation="0dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/car" />
+
+
+            <TextView
+                style="@style/h4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/price_background"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="₹ 18/km"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOYOTA INOVA"
+            style="@style/h3"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textFontWeight="600"/>
+
+
+
+        <TextView
+            style="@style/h4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 seater  Model: 2018"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/gray_text_color"
+           />
+
+        <TextView
+
+            style="@style/h4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patrakar Puram Rd"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/gray_text_color"
+            />
+
+        <TextView
+            style="@style/h4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timing : 24*7"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/gray_text_color"
+            />
+
+
+        <TextView
+            style="@style/h3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33sdp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_4sdp"
+            android:text="Book now"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textFontWeight="800"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

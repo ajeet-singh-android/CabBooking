@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+tools:context=".driving_school_list.DrivingSchoolListFragment">
+
+
+<include
+    layout="@layout/home_tollbar"
+    />
+
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/drivingSchoolRecyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:elevation="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:listitem="@layout/driving_school_list_item" />
+
+
+
+</LinearLayout>

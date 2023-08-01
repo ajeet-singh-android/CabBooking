@@ -10,4 +10,34 @@
         android:name="com.example.cabbooking.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/carListFragment"
+        android:name="com.example.cabbooking.carlist.CarListFragment"
+        android:label="fragment_car_list"
+        tools:layout="@layout/fragment_car_list" />
+    <fragment
+        android:id="@+id/carDetailsFragmentFragment"
+        android:name="com.example.cabbooking.car_details.CarDetailsFragmentFragment"
+        android:label="fragment_car_details_fragment"
+        tools:layout="@layout/fragment_car_details_fragment" />
+    <fragment
+        android:id="@+id/drivingSchoolListFragment"
+        android:name="com.example.cabbooking.driving_school_list.DrivingSchoolListFragment"
+        android:label="fragment_driving_school_list"
+        tools:layout="@layout/fragment_driving_school_list" />
+    <fragment
+        android:id="@+id/hireDriverDetailsFragment"
+        android:name="com.example.cabbooking.hire_driver_details.HireDriverDetailsFragment"
+        android:label="fragment_hire_driver_details"
+        tools:layout="@layout/fragment_hire_driver_details" />
+    <fragment
+        android:id="@+id/hireDriverListFragment"
+        android:name="com.example.cabbooking.hiredriver_list.HireDriverListFragment"
+        android:label="fragment_hire_driver_list"
+        tools:layout="@layout/fragment_hire_driver_list" />
+    <fragment
+        android:id="@+id/drivingSchoolDetailsFragment"
+        android:name="com.example.cabbooking.drivingschool_details.DrivingSchoolDetailsFragment"
+        android:label="fragment_driving_school_details"
+        tools:layout="@layout/fragment_driving_school_details" />
 </navigation>

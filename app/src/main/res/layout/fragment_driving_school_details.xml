@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+tools:context=".drivingschool_details.DrivingSchoolDetailsFragment">
+
+
+<include
+    layout="@layout/home_tollbar"
+    />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:paddingHorizontal="@dimen/_15sdp"
+    android:gravity="center_vertical"
+    android:elevation="@dimen/_10sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lucknow Motor Training School"
+        style="@style/h3"
+        android:textFontWeight="800"/>
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/_12sdp"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginHorizontal="1dp"
+        app:cardCornerRadius="@dimen/_12sdp"
+        android:elevation="0dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hire_driver_img" />
+
+
+            <TextView
+                style="@style/h4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/price_background"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="₹ 18/km"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fee: 3500 Rs"
+        style="@style/h3"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textFontWeight="600"/>
+
+    <TextView
+
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration: 15 days ( 5km/day )"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/gray_text_color"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <RatingBar
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:layout_gravity="bottom"
+            android:rating="5"
+            android:theme="@style/RatingBar"
+            />
+
+        <TextView
+            style="@style/h4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textFontWeight="600"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available"
+        android:textFontWeight="600"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/green"
+        />
+
+
+
+
+    <TextView
+
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patrakar Puram Rd"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/gray_text_color"
+        />
+
+    <TextView
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timing : 24*7"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/gray_text_color"
+        />
+
+
+    <TextView
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textFontWeight="600"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textColor="@color/btn_black"
+        />
+
+    <TextView
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driving School Exp : 6yrs"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/gray_text_color"
+        />
+
+    <TextView
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration No : xxxxxxxxx"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/gray_text_color"
+        />
+
+
+    <TextView
+        style="@style/h3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_33sdp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_4sdp"
+        android:text="Choose Slot"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textFontWeight="800"/>
+
+</LinearLayout>
+
+
+</LinearLayout>

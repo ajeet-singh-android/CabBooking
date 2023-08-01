@@ -6,6 +6,8 @@
     <color name="appcolor">#FFD428</color>
     <color name="btn_black">#312E21</color>
     <color name="gray_text_color">#737373</color>
+    <color name="light_gray">#0F737373</color>
+    <color name="green">#34A853</color>
 
 
 </resources>

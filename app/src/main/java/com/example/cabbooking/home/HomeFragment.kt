@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cabbooking.MainActivity
 import com.example.cabbooking.R
 import com.example.cabbooking.databinding.CategoryItemsBinding
 import com.example.cabbooking.databinding.FragmentHomeBinding
@@ -53,6 +54,11 @@ class HomeFragment : Fragment() {
         binding.driverschoolViewpager.adapter = HireDriverViewPagerAdapter()
         binding.drivingschoolIndicator.attachTo(binding.driverschoolViewpager)
         binding.drivingschoolRecyclerview.adapter = HireDriverAdapter()
+
+
+        binding.cartitleLayout.setOnClickListener {
+            (requireActivity() as MainActivity).gotoPage(R.id.carListFragment)
+        }
     }
 
 
