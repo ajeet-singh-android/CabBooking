@@ -32,7 +32,7 @@ class HireDriverListFragment : Fragment() {
 
         binding.hiredriverRecyclerview.adapter = HireDeiverListAdapter(object : HireDeiverListAdapter.clickListener {
             override fun onClicked(position: Int) {
-                (requireActivity() as MainActivity).gotoPage(R.id.carDetailsFragmentFragment)
+                (requireActivity() as MainActivity).gotoPage(R.id.hireDriverDetailsFragment)
             }
 
         })

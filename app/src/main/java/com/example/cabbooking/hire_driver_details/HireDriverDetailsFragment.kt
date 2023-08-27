@@ -5,8 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.cabbooking.MainActivity
 import com.example.cabbooking.R
 import com.example.cabbooking.databinding.FragmentHireDriverDetailsBinding
+import com.example.cabbooking.utils.ClickListener
+import com.example.cabbooking.utils.DriverDialog
 
 class HireDriverDetailsFragment : Fragment() {
 
@@ -26,6 +29,16 @@ class HireDriverDetailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         _binding = FragmentHireDriverDetailsBinding.bind(view)
+
+
+        binding.hirenow.setOnClickListener {
+           requireActivity().DriverDialog(object : ClickListener {
+               override fun onClicked() {
+                   (requireActivity() as MainActivity).gotoPage(R.id.hireDriverFragment)
+               }
+
+           })
+        }
     }
 
     override fun onDestroy() {

@@ -59,6 +59,11 @@ class HomeFragment : Fragment() {
         binding.cartitleLayout.setOnClickListener {
             (requireActivity() as MainActivity).gotoPage(R.id.carListFragment)
         }
+
+
+        binding.hiredierviewLayout.setOnClickListener {
+            (requireActivity() as MainActivity).gotoPage(R.id.hireDriverListFragment)
+        }
     }
 
 

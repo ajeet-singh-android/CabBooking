@@ -40,4 +40,14 @@
         android:name="com.example.cabbooking.drivingschool_details.DrivingSchoolDetailsFragment"
         android:label="fragment_driving_school_details"
         tools:layout="@layout/fragment_driving_school_details" />
+    <fragment
+        android:id="@+id/carBookingFragment"
+        android:name="com.example.cabbooking.car_booking.CarBookingFragment"
+        android:label="fragment_car_booking"
+        tools:layout="@layout/fragment_car_booking" />
+    <fragment
+        android:id="@+id/hireDriverFragment"
+        android:name="com.example.cabbooking.hiredriver.HireDriverFragment"
+        android:label="fragment_hire_driver"
+        tools:layout="@layout/fragment_hire_driver" />
 </navigation>
